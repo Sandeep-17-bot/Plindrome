@@ -159,10 +159,10 @@ form.addEventListener("submit", function (e) {
       var isPalindromeDate = checkPalindromeForAllFormats(date)
 
       if (isPalindromeDate) {
-        document.getElementById('output').innerText = "yay! your birthday is a palindrome!!"
+        document.getElementById('output').innerText = "Awesome ! Your  birthday is a Palindrome 🤓!!"
       } else {
         var [ctr, nextDate] = getNextPalindromeDate(date);
-        document.getElementById('output').innerText = `The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${ctr} days! 😔`;
+        document.getElementById('output').innerText = `Ohh No your birthday is not a Palindrome. The next Palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${ctr} days! 😔`;
       }
     }
 
